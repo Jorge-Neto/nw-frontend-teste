@@ -22,6 +22,28 @@ body {
   letter-spacing: 0;
 }
 
+main {
+  border-bottom: 5px solid #0089bc;
+}
+
+footer {
+  background-color: #283137;
+}
+footer .row {
+  flex-direction: row;
+}
+footer .row:first-child {
+  justify-content: space-between;
+  height: 300px;
+  align-items: flex-start;
+  padding-top: 2.5rem;
+}
+footer .row:last-child {
+  border-top: 3px solid #e1e1e1;
+  padding: 15px 10px 50px 0;
+  justify-content: space-between;
+}
+
 .row {
   display: flex;
   flex-direction: column;
@@ -146,6 +168,7 @@ select {
   border: transparent;
   background-color: #033244;
   border-radius: 8px;
+  color: #b2eaff;
 }
 .navbar .pesquisa form input::placeholder {
   color: #b2eaff;
@@ -389,6 +412,7 @@ select {
 }
 .certificados .row:nth-child(2) {
   flex-direction: row;
+  justify-content: space-around;
 }
 .certificados .text {
   flex-direction: column;
@@ -402,17 +426,125 @@ select {
 }
 .certificados .text .certificados-text {
   font-weight: 100;
-  color: #2C3A2F;
+  color: #2c3a2f;
   font-size: 15px;
 }
 
-.conato .box {
-  background-color: #F3F3F3;
+.contato .box {
+  background-color: #f3f3f3;
   padding: 2.5rem 1.75rem;
 }
-.conato .box .text {
+.contato .box .text {
   flex-direction: column;
-    padding: 0 45px;
-    width: 50%;
-    text-align: left;
+  padding: 0 50px;
+  width: 40%;
+  text-align: left;
+}
+.contato .box .contato-title {
+  color: #033244;
+  font-size: 32px;
+}
+.contato .box .contato-text {
+  color: #0089bc;
+  font-weight: bold;
+  font-size: 20px;
+}
+.contato .box .form {
+  width: 60%;
+}
+.contato .box .form form {
+  width: 90%;
+}
+.contato .box .form form .form-group input {
+  color: #005271;
+  border: 1px solid #005271;
+  padding: 10px 20px;
+  vertical-align: middle;
+  margin: 8px 0;
+  width: 100%;
+}
+.contato .box .form form .form-group input::placeholder {
+  color: #005271;
+  font-size: 16px;
+}
+.contato .box .form form .form-group .submit-button {
+  text-decoration: none;
+  border: none;
+  font-family: "Roboto Slab", serif;
+  background-color: #71d8ff;
+  color: #033244;
+  padding: 11px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  align-self: flex-start;
+  margin: 8px 0;
+}
+
+.logo .footer-logo {
+  margin: 5px;
+}
+.listas {
+  align-items: flex-start;
+}
+
+.listas .lista {
+  list-style: none;
+  text-align: left;
+  padding: 0 15px;
+}
+.listas .lista-atendimento {
+  list-style: none;
+  text-align: left;
+  padding-left: 15px;
+}
+.listas .lista .lista-titulo,
+.lista-atendimento .lista-titulo {
+  color: #e2f7ff;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+.listas .lista .li-item {
+  margin: 3px 0px;
+}
+.listas .lista .li-item a {
+  color: #00aeef;
+  text-decoration: none;
+  font-size: 14px;
+}
+.listas .lista-atendimento .li-item {
+  color: #b2eaff;
+  font-size: 14px;
+  width: 163px;
+}
+
+.direitos {
+  align-items: flex-start;
+  padding-top: 0.5rem;
+}
+.direitos .texto-direitos {
+  font-size: 14px;
+  color: #E1E1E1;
+}
+
+.redes-sociais {
+  flex-direction: column;
+}
+.redes-sociais .redes-titulo {
+  color: #71D8FF;
+  font-size: 20px;
+  font-weight: 400;
+}
+.redes-sociais .redes {
+  align-self: flex-start;
+}
+.redes-sociais .redes a {
+  color: #71D8FF;
+  padding: 20px 15px 0;
+}
+.redes-sociais .redes a:first-child {
+  padding-left: 0;
+}
+.redes-sociais .redes a i {
+  font-size: 1.85em;
 }
