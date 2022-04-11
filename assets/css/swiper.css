@@ -1,4 +1,9 @@
 .swiper {
-    width: 600px;
-    height: 300px;
-  }
+  width: 600px;
+  height: 300px;
+  display: initial !important;
+}
+.swiper-slide {
+    flex-shrink: unset;
+    flex-direction: column;
+}

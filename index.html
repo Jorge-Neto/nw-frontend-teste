@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
     <!-- Import do carrossel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/swiper/swiper.js"></script>
 
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row border-blue">
             <div class="navbar">
                 <div class="list">
                     <ul>
@@ -79,46 +79,54 @@
             </div>
 
         </div>
-        <div class="row">
+        <div class="row back-100">
             <div class="banner">
-                <img src="" alt="" />
+                <!-- <img src="" alt="" /> -->
             </div>
         </div>
     </header>
     <main>
-        <section class="introducao">
+        <section class="introducao bold-border-blue">
             <div class="row">
                 <div class="navigation">
-                    <i class="icon-previous"></i>
-                    <i class="icon-next"></i>
+                    <span class="icon">
+                        <i class="fa-solid fa-angle-left previous"></i>
+                    </span>
+                    <span class="icon">
+                        <i class="fa-solid fa-angle-right next"></i>
+                    </span>
                 </div>
             </div>
             <div class="row">
                 <div class="servicos">
                     <div class="esquerda">
                         <div class="texto">
-                            <h1 class="servicos-titulo">Descubra os serviços Nerdweb <span>que mais combinam com a sua
+                            <h1 class="servicos-titulo">Descubra os serviços Nerdweb <span class="destaque">que mais
+                                    combinam com a sua
                                     empresa</span></h1>
                             <a href="http://" target="_blank" rel="noopener noreferrer" class="btn-ver-servicos">Ver
                                 Serviços</a>
                         </div>
                     </div>
                     <div class="meio">
-                        <img src="" alt="" class="linha-vertical" />
+                        <img src="./assets/img/vertical-line.PNG" alt="" class="linha-vertical" />
                     </div>
                     <div class="direita">
                         <div class="servico">
-                            <img src="" alt="" />
+                            <img src="./assets/img/alt_route_black_24dp.svg" width="150" height="150"
+                                alt="Icone de rotas" />
                             <h3 class="servico-titulo">Titulo</h3>
                             <p class="servico-desc">Dolor sit amet, consetetur sadipscing elitr, sed</p>
                         </div>
                         <div class="servico">
-                            <img src="" alt="" />
+                            <img src="./assets/img/headset_mic_black_24dp.svg" width="150" height="150"
+                                alt="Icone de microfone" />
                             <h3 class="servico-titulo">Serviço</h3>
                             <p class="servico-desc">Lorem ipsum dolor sit amet, consetetur sadipscing</p>
                         </div>
                         <div class="servico">
-                            <img src="" alt="" />
+                            <img src="./assets/img/inventory_black_24dp.svg" width="150" height="150"
+                                alt="Icone de inventário" />
                             <h3 class="servico-titulo">Exemplo</h3>
                             <p class="servico-desc">Ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                         </div>
@@ -142,22 +150,54 @@
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
-                                Slide 1
-                                <img src="" alt="">
+                                <img src="./assets/img/LAPTOP.png" alt="Icone de Laptop">
+                                SITES
                             </div>
                             <div class="swiper-slide">
-                                Slide 2
-                                <img src="" alt="">
+                                <img src="./assets/img/PHONE.png" alt="Icone de Smartphone">
+                                E-COMMERCE
                             </div>
                             <div class="swiper-slide">
-                                Slide 3
-                                <img src="" alt="">
+                                <img src="./assets/img/SHOP.png" alt="Icone de Loja">
+                                REDES
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/LAPTOP.png" alt="Icone de Laptop">
+                                SITES
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/PHONE.png" alt="Icone de Smartphone">
+                                E-COMMERCE
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/SHOP.png" alt="Icone de Loja">
+                                REDES
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/LAPTOP.png" alt="Icone de Laptop">
+                                SITES
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/PHONE.png" alt="Icone de Smartphone">
+                                E-COMMERCE
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/SHOP.png" alt="Icone de Loja">
+                                REDES
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/LAPTOP.png" alt="Icone de Laptop">
+                                SITES
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/PHONE.png" alt="Icone de Smartphone">
+                                E-COMMERCE
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/img/SHOP.png" alt="Icone de Loja">
+                                REDES
                             </div>
                         </div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
 
                         <!-- If we need scrollbar -->
                         <div class="swiper-scrollbar"></div>
@@ -191,21 +231,24 @@
             <div class="row">
                 <div class="cards">
                     <div class="card">
-                        <img class="card-image" src="" alt="" />
+                        <img class="card-image" src="./assets/img/pessoa-card.png"
+                            alt="Imagem de pessoa em escritório" />
                         <h2 class="card-title">Serviço de teste de front-end</h2>
                         <p class="card-texto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                             eirmod tempor invidunt ut labore et dolore magna</p>
                         <a href="http://" target="_blank" rel="noopener noreferrer" class="card-link">CONHECER</a>
                     </div>
                     <div class="card">
-                        <img class="card-image" src="" alt="" />
+                        <img class="card-image" src="./assets/img/computador-card.png"
+                            alt="Imagem de notebook em escritório" />
                         <h2 class="card-title">Serviço de teste de front-end</h2>
                         <p class="card-texto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                             eirmod tempor invidunt ut labore et dolore magna</p>
                         <a href="http://" target="_blank" rel="noopener noreferrer" class="card-link">CONHECER</a>
                     </div>
                     <div class="card">
-                        <img class="card-image" src="" alt="" />
+                        <img class="card-image" src="./assets/img/pessoas-card.png"
+                            alt="Imagem de pessoas em reunião" />
                         <h2 class="card-title">Serviço de teste de front-end</h2>
                         <p class="card-texto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                             eirmod tempor invidunt ut labore et dolore magna</p>
@@ -227,44 +270,52 @@
         </section>
         <section class="certificados">
             <div class="row">
-                <img class="horizontal-line" src="" alt="" />
+                <img class="horizontal-line" src="./assets/img/horizontal-line.PNG" alt="" />
             </div>
             <div class="row">
                 <div class="text">
                     <p class="certificados-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
                     <p class="certificados-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        voluptua. At vero eos et accusam et.</p>
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        <strong>At
+                            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</strong> no
+                        sea takimata
+                        sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        <strong>sadipscing elitr,
+                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                            diam</strong>
+                        voluptua. At vero eos et accusam et.
+                    </p>
                 </div>
                 <div class="certifados-icones">
-                    <img class="icon" src="" alt="" />
-                    <img class="icon" src="" alt="" />
-                    <img class="icon" src="" alt="" />
+                    <img class="icon" src="./assets/img/selo-wgc.png" alt="Icone selo Grãos Integrais" />
+                    <img class="icon" src="./assets/img/principle-2.png" alt="Ícone certificado produto vegano" />
+                    <img class="icon" src="./assets/img/principle-3.png" alt="Ícone certificado produto orgânico" />
                 </div>
             </div>
         </section>
         <section class="contato">
             <div class="row">
-                <div class="text">
-                    <h1 class="contato-title">Novidades e descontos especiais</h1>
-                    <p class="contato-text">Descubra com a gente uma vida nova, saudável, cheia de sabor e desconto!</p>
-                </div>
-                <div class="form">
-                    <form action="" method="post" class="contato-form">
-                        <div class="form-group">
-                            <input type="text" name="text" id="text" placeholder="Nome">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" id="email" placeholder="E-mail">
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="submit-button">CADASTRAR</button>
-                        </div>
-                    </form>
+                <div class="box">
+                    <div class="text">
+                        <h1 class="contato-title">Novidades e descontos especiais</h1>
+                        <p class="contato-text">Descubra com a gente uma vida nova, saudável, cheia de sabor e desconto!
+                        </p>
+                    </div>
+                    <div class="form">
+                        <form action="" method="post" class="contato-form">
+                            <div class="form-group">
+                                <input type="text" name="text" id="text" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="submit-button">CADASTRAR</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
