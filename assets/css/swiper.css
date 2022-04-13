@@ -64,3 +64,31 @@
     padding-top: 8px;
   }
 }
+@media screen and (max-width: 376px) {
+  .swiper-container {
+    background-color: transparent;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+  .swiper-wrapper {
+    padding: 0;
+    height: auto;
+    margin-bottom: 25px;
+  }
+  .swiper-slide .box {
+    height: auto;
+    padding-bottom: 9px;
+  }
+  .swiper-slide p {
+    font-size: 14px;
+    padding-top: 13px;
+  }
+  .swiper-horizontal > .swiper-scrollbar {
+    border-radius: 0;
+    height: 7px;
+    width: 100%;
+  }
+  .swiper-horizontal > .swiper-scrollbar .swiper-scrollbar-drag {
+    border-radius: 0;
+  }
+}
