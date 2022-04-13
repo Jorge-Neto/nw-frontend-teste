@@ -9,10 +9,12 @@
 
     <!-- Import do carrossel -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- Import dos estilos -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/config.css">
 
     <!-- Import do scripts -->
     <script src="./assets/js/index.js"></script>
@@ -28,11 +30,11 @@
 <body>
     <header>
         <div class="row">
-            <div class="top">
-                <div class="logo">
+            <div class="div top">
+                <div class="div logo">
                     <img src="./assets/img/logo.png" alt="" class="logo-top">
                 </div>
-                <div class="servicos">
+                <div class="div servicos hide-for-small-only">
                     <ul class="serivcos-list">
                         <li>Nerdweb</li>
                         <li>Serviços</li>
@@ -40,9 +42,10 @@
                         <li>Atendimento</li>
                     </ul>
                 </div>
-                <div class="contas">
+                <div class="div contas">
                     <ul class="lista-contas">
-                        <select name="select-contas" id="select-contas" class="select-contas" value="Dia a Dia">
+                        <select name="select-contas" id="select-contas" class="select-contas hide-for-small-only"
+                            value="Dia a Dia">
                             <option value="dia-a-dia">Dia a Dia</option>
                         </select>
                         <li>
@@ -51,16 +54,43 @@
                         <li>
                             <img src="./assets/img/shopping_cart_black_24dp.svg" alt="">
                         </li>
+                        <li class="show-for-small-only">
+                            <span><i class="fa-solid fa-bars"></i></span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="row border-blue">
-            <div class="navbar">
-                <div class="list">
+        <div class="div row border-blue">
+            <div class="div navbar-desk hide-for-small-only">
+                <div class="div list">
                     <ul>
                         <select name="select-navbar" id="select-navbar" value="Sites">
-                            <option value="sites">Sites</option>
+                            <option label="Sites" disabled selected>Sites</option>
+                            <optgroup label="Soluções Site">
+                                <option>Briefing</option>
+                                <option>Pesquisa</option>
+                                <option>Criação</option>
+                                <option>Veiculação</option>
+                            </optgroup>
+                            <optgroup label="Soluções por E-commerce">
+                                <option>Lorem</option>
+                                <option>Ipsum</option>
+                                <option>Dolor</option>
+                                <option>Google ads</option>
+                                <option>Análise de mercado</option>
+                            </optgroup>
+                            <optgroup label="Soluções por Redes Sociais">
+                                <option>Briefing</option>
+                                <option>Pesquisa</option>
+                                <option>Criação</option>
+                                <option>Veiculação</option>
+                            </optgroup>
+                            <optgroup label="Soluções por Landing Page">
+                                <option>Conteúdo</option>
+                                <option>Conteúdo</option>
+                            </optgroup>
+
                         </select>
                         <li>Redes Sociais</li>
                         <li>E-commerce</li>
@@ -69,7 +99,7 @@
                     </ul>
                 </div>
 
-                <div class="pesquisa">
+                <div class="div pesquisa">
                     <form action="/action_page.php">
                         <input type="text" placeholder="Digite sua pesquisa" name="pesquisa">
                         <button type="submit"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
@@ -78,16 +108,16 @@
             </div>
 
         </div>
-        <div class="row back-100">
-            <div class="banner">
+        <div class="div row back-100">
+            <div class="div banner">
                 <!-- <img src="" alt="" /> -->
             </div>
         </div>
     </header>
     <main>
         <section class="introducao bold-border-blue">
-            <div class="row">
-                <div class="navigation">
+            <div class="row hide-for-small-only">
+                <div class="div navigation">
                     <span class="icon">
                         <i class="fa-solid fa-angle-left previous"></i>
                     </span>
@@ -97,114 +127,155 @@
                 </div>
             </div>
             <div class="row">
-                <div class="servicos">
-                    <div class="esquerda">
-                        <div class="texto">
+                <div class="div servicos">
+                    <div class="div esquerda">
+                        <div class="div texto">
                             <h1 class="servicos-titulo">Descubra os serviços Nerdweb <span class="destaque">que mais
                                     combinam com a sua
                                     empresa</span></h1>
-                            <a href="http://" target="_blank" rel="noopener noreferrer" class="btn-ver-servicos">Ver
-                                Serviços</a>
+                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="btn-ver-servicos hide-for-small-only">Ver
+                                Serviços
+                            </a>
                         </div>
                     </div>
-                    <div class="meio">
-                        <img src="./assets/img/vertical-line.PNG" alt="" class="linha-vertical" />
+                    <div class="div meio">
+                        <img src="./assets/img/vertical-line.PNG" alt="Linhe vertical Azul" class="linha-vertical hide-for-small-only" />
+                        <img src="./assets/img/horizontal-line-mobile.PNG" alt="Linhe horizontal Azul" width="138px" class="linha-horizontal-mobile show-for-small-only" />
                     </div>
-                    <div class="direita">
-                        <div class="servico">
+                    <div class="div direita hide-for-small-only">
+                        <div class="div servico-desk">
                             <img src="./assets/img/alt_route_black_24dp.svg" width="150" height="150"
                                 alt="Icone de rotas" />
                             <h3 class="servico-titulo">Titulo</h3>
                             <p class="servico-desc">Dolor sit amet, consetetur sadipscing elitr, sed</p>
                         </div>
-                        <div class="servico">
+                        <div class="div servico-desk">
                             <img src="./assets/img/headset_mic_black_24dp.svg" width="150" height="150"
                                 alt="Icone de microfone" />
                             <h3 class="servico-titulo">Serviço</h3>
                             <p class="servico-desc">Lorem ipsum dolor sit amet, consetetur sadipscing</p>
                         </div>
-                        <div class="servico">
+                        <div class="div servico-desk">
                             <img src="./assets/img/inventory_black_24dp.svg" width="150" height="150"
                                 alt="Icone de inventário" />
                             <h3 class="servico-titulo">Exemplo</h3>
                             <p class="servico-desc">Ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                         </div>
+
+                    </div>
+                    <div class="link-servicos show-for-small-only">
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="btn-ver-servicos-mobile">Ver
+                            Serviços
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="conheca-produtos">
             <div class="row">
-                <div class="conheca-titulo">
+                <div class="div conheca-titulo">
                     <h1 class="titulo">
                         Conheça todos <span>produtos Nerdweb</span>
                     </h1>
                 </div>
             </div>
             <div class="row">
-                <div class="carrossel">
+                <div class="div carrossel">
                     <!-- Slider main container -->
-                    <div class="swiper-container">
+                    <div class="div swiper-container">
                         <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
+                        <div class="div swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">
-                                <img src="./assets/img/laptop.png" alt="Icone de laptop">
-                                SITES
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/laptop.png" alt="Icone de laptop" width="110px"
+                                        height="81px">
+                                    <p>SITES</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/phone.png" alt="Icone de Smartphone">
-                                E-COMMERCE
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/phone.png" alt="Icone de Smartphone" width="110px"
+                                        height="81px">
+                                    <p>E-COMMERCE</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/shop.png" alt="Icone de Loja">
-                                REDES
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/shop.png" alt="Icone de Loja" width="110px" height="81px">
+                                    <p>REDES</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/laptop.png" alt="Icone de laptop">
-                                SITES
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/laptop.png" alt="Icone de laptop" width="110px"
+                                        height="81px">
+                                    <p>SITES</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/phone.png" alt="Icone de Smartphone">
-                                E-COMMERCE
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/phone.png" alt="Icone de Smartphone" width="110px"
+                                        height="81px">
+                                    <p>E-COMMERCE</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/shop.png" alt="Icone de Loja">
-                                REDES
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/shop.png" alt="Icone de Loja" width="110px" height="81px">
+                                    <p>REDES</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/laptop.png" alt="Icone de laptop">
-                                SITES
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/laptop.png" alt="Icone de laptop" width="110px"
+                                        height="81px">
+                                    <p>SITES</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/phone.png" alt="Icone de Smartphone">
-                                E-COMMERCE
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/phone.png" alt="Icone de Smartphone" width="110px"
+                                        height="81px">
+                                    <p>E-COMMERCE</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/shop.png" alt="Icone de Loja">
-                                REDES
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/shop.png" alt="Icone de Loja" width="110px" height="81px">
+                                    <p>REDES</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/laptop.png" alt="Icone de laptop">
-                                SITES
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/laptop.png" alt="Icone de laptop" width="110px"
+                                        height="81px">
+                                    <p>SITES</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/phone.png" alt="Icone de Smartphone">
-                                E-COMMERCE
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/phone.png" alt="Icone de Smartphone" width="110px"
+                                        height="81px">
+                                    <p>E-COMMERCE</p>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="./assets/img/shop.png" alt="Icone de Loja">
-                                REDES
+                            <div class="div swiper-slide">
+                                <div class="div box">
+                                    <img src="./assets/img/shop.png" alt="Icone de Loja" width="110px" height="81px">
+                                    <p>REDES</p>
+                                </div>
                             </div>
                         </div>
 
                         <!-- If we need scrollbar -->
-                        <div class="swiper-scrollbar"></div>
+                        <div class="div swiper-scrollbar"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="ver-todos">
+                <div class="div ver-todos">
                     <a href="http://" target="_blank" rel="noopener noreferrer" class="btn-ver-todos">Ver todos os
                         produtos</a>
                 </div>
@@ -212,7 +283,7 @@
         </section>
         <section class="faca-parte">
             <div class="row">
-                <div class="conteudo">
+                <div class="div conteudo">
                     <h2 class="faca-parte-title">Faça parte do nosso time de nerds</h2>
                     <p class="faca-parte-texto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
@@ -222,14 +293,14 @@
         </section>
         <section class="selecao">
             <div class="row">
-                <div class="selecao-titles">
+                <div class="div selecao-titles">
                     <h1 class="title">Seleção de Serviços</h1>
                     <h3 class="sub-title">Conheça nossa seleção especial</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="cards">
-                    <div class="card">
+                <div class="div cards hide-for-small-only">
+                    <div class="div card">
                         <img class="card-image" src="./assets/img/pessoa-card.png"
                             alt="Imagem de pessoa em escritório" />
                         <h2 class="card-title">Serviço de teste de front-end</h2>
@@ -237,7 +308,7 @@
                             eirmod tempor invidunt ut labore et dolore magna</p>
                         <a href="http://" target="_blank" rel="noopener noreferrer" class="card-link">CONHECER</a>
                     </div>
-                    <div class="card">
+                    <div class="div card">
                         <img class="card-image" src="./assets/img/computador-card.png"
                             alt="Imagem de notebook em escritório" />
                         <h2 class="card-title">Serviço de teste de front-end</h2>
@@ -245,7 +316,7 @@
                             eirmod tempor invidunt ut labore et dolore magna</p>
                         <a href="http://" target="_blank" rel="noopener noreferrer" class="card-link">CONHECER</a>
                     </div>
-                    <div class="card">
+                    <div class="div card">
                         <img class="card-image" src="./assets/img/pessoas-card.png"
                             alt="Imagem de pessoas em reunião" />
                         <h2 class="card-title">Serviço de teste de front-end</h2>
@@ -257,8 +328,8 @@
             </div>
         </section>
         <section class="conheca-visao">
-            <div class="row">
-                <div class="conteudo">
+            <div class="row w-100">
+                <div class="div conteudo">
                     <h2 class="faca-parte-title">Conheça a visão Nerdweb e entenda nossa história</h2>
                     <p class="faca-parte-texto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                         eirmod tempor</p>
@@ -269,10 +340,11 @@
         </section>
         <section class="certificados">
             <div class="row">
-                <img class="horizontal-line" src="./assets/img/horizontal-line.PNG" alt="" />
+                <img class="horizontal-line hide-for-small-only" src="./assets/img/horizontal-line.PNG" alt="" />
+                <img class="horizontal-line show-for-small-only" src="./assets/img/horizontal-line-mobile-2.PNG" alt="" />
             </div>
             <div class="row">
-                <div class="text">
+                <div class="div text">
                     <p class="certificados-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
                         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
                     <p class="certificados-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -287,7 +359,7 @@
                         voluptua. At vero eos et accusam et.
                     </p>
                 </div>
-                <div class="certifados-icones">
+                <div class="div certifados-icones">
                     <img class="icon" src="./assets/img/selo-wgc.png" alt="Icone selo Grãos Integrais" />
                     <img class="icon" src="./assets/img/principle-2.png" alt="Ícone certificado produto vegano" />
                     <img class="icon" src="./assets/img/principle-3.png" alt="Ícone certificado produto orgânico" />
@@ -296,21 +368,21 @@
         </section>
         <section class="contato">
             <div class="row">
-                <div class="box">
-                    <div class="text">
+                <div class="div box">
+                    <div class="div text">
                         <h1 class="contato-title">Novidades e descontos especiais</h1>
                         <p class="contato-text">Descubra com a gente uma vida nova, saudável, cheia de sabor e desconto!
                         </p>
                     </div>
-                    <div class="form">
+                    <div class="div form">
                         <form action="" method="post" class="contato-form">
-                            <div class="form-group">
+                            <div class="div form-group">
                                 <input type="text" name="text" id="text" placeholder="Nome">
                             </div>
-                            <div class="form-group">
+                            <div class="div form-group">
                                 <input type="email" name="email" id="email" placeholder="E-mail">
                             </div>
-                            <div class="form-group">
+                            <div class="div form-group">
                                 <button type="submit" class="submit-button">CADASTRAR</button>
                             </div>
                         </form>
@@ -321,10 +393,10 @@
     </main>
     <footer>
         <div class="row">
-            <div class="logo">
+            <div class="div logo">
                 <img src="./assets/img/logo-nerdweb.png" alt="Logo da empresa no footer" class="footer-logo">
             </div>
-            <div class="listas">
+            <div class="div listas">
                 <ul class="lista">
                     <h3 class="lista-titulo">NERDWEB</h3>
                     <li class="li-item">
@@ -393,14 +465,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="direitos">
+            <div class="div direitos">
                 <p class="texto-direitos">
                     2022 Nerdweb - Extreme Hosting, todos os direitos reservados.
                 </p>
             </div>
-            <div class="redes-sociais">
+            <div class="div redes-sociais">
                 <h3 class="redes-titulo">Fique em sintonia com a gente</h3>
-                <div class="redes">
+                <div class="div redes">
                     <a href="http://" target="_blank" rel="noopener noreferrer" class="facebook">
                         <i class="fa-brands fa-facebook fa-xl"></i>
                     </a>
